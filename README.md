@@ -29,4 +29,4 @@ Antes de comenzar, asegúrate de tener instalado:
 
 1. Clona este repositorio:
    ```bash
-   git clone https://github.com/tu-usuario/sistema-dinamico-datos.git
+   git clone https://github.com/bernardita03/DESAFIO-PROCESO-PRACTICA-KIS-S.P.A.git

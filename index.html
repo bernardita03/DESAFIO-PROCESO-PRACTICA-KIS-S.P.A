@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sistema Dinámico</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Sistema Dinámico de Datos</h1>
+  </header>
+
+  <main>
+    <!-- Selector de Tablas -->
+    <section id="table-selector" class="column">
+      <h2>Tablas de la Base de Datos</h2>
+      <div id="table-list" class="tables-container"></div>
+    </section>
+
+    <!-- Grilla de Datos -->
+    <section id="data-grid" class="column">
+      <h2>Grilla de Datos</h2>
+      <div id="grid-zone" class="dropzone">
+        <table id="data-table">
+          <thead>
+            <tr id="table-headers"></tr>
+          </thead>
+          <tbody id="table-body"></tbody>
+        </table>
+      </div>
+      <button id="clear-button" class="action-button">Limpiar Grilla y Filtros</button>
+    </section>
+
+    <!-- Área de Filtros -->
+    <section id="filters" class="column">
+      <h2>Área de Filtros</h2>
+      <div id="filter-zone" class="dropzone">
+        <p>Arrastra aquí los campos para crear filtros.</p>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+

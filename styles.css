@@ -1,0 +1,202 @@
+/* General */
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #4e73df, #3751ff);
+  color: #fff;
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Main layout */
+main {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-y: auto;
+  max-height: 600px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #4e73df;
+  text-align: center;
+}
+
+p {
+  font-size: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+/* Table list styles */
+#table-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.table-item {
+  border: 1px solid #ccc;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.table-item:hover {
+  background-color: #4e73df;
+  color: #000000;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Field styles */
+.field-item {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  cursor: grab;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+}
+
+.field-item:hover {
+  background-color: #4e73df;
+  color: #fff;
+}
+
+.field-item:active {
+  cursor: grabbing;
+}
+
+/* Dropzone */
+.dropzone {
+  border: 2px dashed #bbb;
+  padding: 20px;
+  background-color: #f9f9f9;
+  min-height: 120px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.dropzone.dragover {
+  background-color: #e0ffe0;
+  border-color: #28a745;
+  transform: scale(1.02);
+}
+
+/* Table styles */
+#data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#data-table th,
+#data-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: left;
+  font-size: 0.95rem;
+}
+
+#data-table th {
+  background-color: #4e73df;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+#data-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+#data-table tr:hover {
+  background-color: #e9ecef;
+}
+
+/* Buttons */
+.action-button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background-color: #4e73df;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.action-button:hover {
+  background-color: #3751ff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Filter zone styles */
+.filter-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.filter-item select {
+  padding: 5px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.filter-item select:focus {
+  border-color: #4e73df;
+}
+
+/* Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #4e73df;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3751ff;
+}
